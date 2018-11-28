@@ -1,0 +1,739 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: 1.5s;
+}
+
+header {
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: repeat-y;
+  min-height: 750px;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+header #logo a {
+  display: block;
+  text-decoration: none;
+  margin-left: 100px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+header .head {
+  display: flex;
+  justify-content: space-between;
+}
+
+header #logo div {
+  font-family: lato light, sans-serif, sans serif;
+  font-size: 14.35px;
+  color: #000;
+  text-transform: uppercase;
+  justify-content: flex-start;
+}
+
+header .small {
+  font-family: lato regular, sans-serif;
+  font-size: 3.54px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+header nav {
+  margin-right: 74px;
+  margin-top: 20px;
+}
+
+header ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+header .nav__link {
+  font-family: myriad pro regular, sans-serif;
+  font-size: 16px;
+  color: #4d4d4d;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 9px 5px;
+  display: inline-block;
+  position: relative;
+  margin-right: 24px;
+}
+
+header .nav__link:before {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #8d8d8d;
+  transition: width 0.3s ease-in-out;
+  left: 0;
+  bottom: 0;
+}
+
+header .nav__link:hover:before {
+  width: 100%;
+}
+
+header .nav__link:hover {
+  text-transform: capitalize;
+  transition: 1s;
+}
+
+header .text {
+  width: 1166px;
+  margin: 0 auto;
+}
+
+header .text > h1 {
+  font-family: myriad pro regular, sans-serif;
+  font-size: 90px;
+  color: #4d4d4d;
+  margin-top: 160px;
+  text-transform: capitalize;
+}
+
+header .subtitle {
+  font-family: myriad pro regular, sans-serif;
+  font-size: 22px;
+  color: #4d4d4d;
+  text-transform: capitalize;
+}
+
+header .hire {
+  width: 1166px;
+  margin: 0 auto;
+}
+
+header .b1, header .b2 {
+  width: 162px;
+  height: 50px;
+  font-family: myriad pro regular, sans-serif;
+  font-size: 16px;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  margin-top: 30px;
+  background: none;
+  border: 1px solid #000;
+}
+
+header .b1 {
+  margin-right: 20px;
+}
+
+header .b1:hover {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+header .b2:hover {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+header .down > img {
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+header .down {
+  width: 30px;
+  height: 30px;
+  color: white;
+  display: block;
+}
+
+.about {
+  max-width: 1366px;
+  margin: 0 auto;
+  min-height: 768px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about .foto {
+  width: 570px;
+  height: 443px;
+  margin-top: 108px;
+  margin-right: 100px;
+}
+
+.about .text1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 152px;
+  margin-left: 100px;
+}
+
+.about .text1 .block {
+  position: relative;
+  width: 60px;
+  height: 35px;
+  border-bottom: 4px solid #4d4d4d;
+  margin-bottom: 20px;
+}
+
+.about .text1 .block .in_block {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: none;
+}
+
+.about .text1 .block .in_block > span {
+  font-family: myriad pro regular, sans-serif;
+  font-size: 22px;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.about .text1 .block:hover .in_block {
+  display: block;
+  width: 195px;
+}
+
+.about .text1 h2 {
+  font-family: myriad pro regular, sans-serif;
+  font-size: 46px;
+  letter-spacing: 12px;
+  color: #4d4d4d;
+  text-transform: uppercase;
+}
+
+.about .text1 .desc {
+  font-family: myriad pro regular, sans-serif;
+  font-size: 16px;
+  color: #4d4d4d;
+  line-height: 26px;
+  margin-bottom: 35px;
+}
+
+.about .text1 .mycv {
+  font-family: myriad pro regular, sans-serif;
+  font-size: 16px;
+  word-spacing: 6px;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  width: 245px;
+  height: 50px;
+  background: none;
+  border: 1px solid #4d4d4d;
+  cursor: pointer;
+}
+
+.service {
+  min-height: 693px;
+  max-width: 1366px;
+  margin: 0 auto;
+  background-color: #f6f6f6;
+}
+
+.service .text1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  width: 1176px;
+  margin: 0 auto;
+}
+
+.service .text1 .block {
+  position: relative;
+  width: 60px;
+  height: 35px;
+  border-bottom: 4px solid #4d4d4d;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+.service .text1 .block .in_block {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: none;
+  margin-left: -30px;
+}
+
+.service .text1 .block .in_block > span {
+  font-family: myriad pro regular, sans-serif;
+  font-size: 22px;
+  color: #4d4d4d;
+  text-transform: capitalize;
+  letter-spacing: 11px;
+}
+
+.service .text1 .block:hover .in_block {
+  display: block;
+  width: 195px;
+}
+
+.service .text1 h2 {
+  font-family: myriad pro regular, sans-serif;
+  font-size: 46px;
+  letter-spacing: 8px;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.service .serv_menu {
+  width: 1176px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service .serv_menu figure {
+  text-align: center;
+  width: 362px;
+  padding-bottom: 80px;
+}
+
+.service .serv_menu figure figcaption {
+  font-family: asap medium, sans-serif;
+  font-size: 24px;
+  line-height: 35px;
+  text-transform: capitalize;
+  color: #4d4d4d;
+}
+
+.skills {
+  min-height: 767px;
+  max-width: 1366px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.skills div {
+  margin: 0 auto;
+  width: 1013px;
+}
+
+.portfolio {
+  min-height: 1096px;
+  max-width: 1366px;
+  margin: 0 auto;
+  background-color: #f6f6f6;
+}
+
+.portfolio .text1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  width: 1176px;
+  margin: 0 auto;
+}
+
+.portfolio .text1 .block {
+  position: relative;
+  width: 60px;
+  height: 35px;
+  border-bottom: 4px solid #4d4d4d;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+.portfolio .text1 .block .in_block {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: none;
+  margin-left: -30px;
+}
+
+.portfolio .text1 .block .in_block > span {
+  font-family: myriad pro regular, sans-serif;
+  font-size: 22px;
+  color: #4d4d4d;
+  text-transform: capitalize;
+  letter-spacing: 11px;
+}
+
+.portfolio .text1 .block:hover .in_block {
+  display: block;
+  width: 195px;
+}
+
+.portfolio .text1 h2 {
+  font-family: myriad pro regular, sans-serif;
+  font-size: 46px;
+  letter-spacing: 8px;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.portfolio .img {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 34px;
+}
+
+.portfolio .img img {
+  padding: 14px 11px;
+}
+
+.portfolio .img .left {
+  padding-left: 0;
+}
+
+.portfolio .img .diff {
+  width: 370px;
+  height: 318px;
+  background-image: url("../img/img6.jpg");
+  margin: 14px 11px;
+  visibility: hidden;
+}
+
+.portfolio .img .diff .diff_hover {
+  position: absolute;
+  width: 56px;
+  height: 55px;
+  background: url("../img/letter.png") no-repeat;
+  background-position: center;
+  margin-left: 157px;
+  margin-top: 135px;
+  visibility: visible;
+}
+
+.portfolio .img .diff:hover {
+  visibility: visible;
+  cursor: pointer;
+}
+
+.portfolio .load {
+  display: block;
+  font-family: myriad pro regular, sans-serif;
+  font-size: 16px;
+  word-spacing: 6px;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  width: 190px;
+  height: 50px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.testimon {
+  min-height: 711px;
+  max-width: 1366px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.testimon .text1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  width: 1176px;
+  margin: 0 auto;
+}
+
+.testimon .text1 .block {
+  position: relative;
+  width: 60px;
+  height: 35px;
+  border-bottom: 4px solid #4d4d4d;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+.testimon .text1 .block .in_block {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: none;
+  margin-left: -110px;
+}
+
+.testimon .text1 .block .in_block > span {
+  font-family: myriad pro regular, sans-serif;
+  font-size: 22px;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  letter-spacing: 11px;
+}
+
+.testimon .text1 .block:hover .in_block {
+  display: block;
+  width: 195px;
+}
+
+.testimon .text1 h2 {
+  font-family: myriad pro regular, sans-serif;
+  font-size: 46px;
+  letter-spacing: 8px;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.testimon #bord {
+  width: 955px;
+  height: 349px;
+  border: 1px solid black;
+  border-bottom: none;
+  margin: 0 auto;
+}
+
+.testimon #bord #wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 85px;
+  margin-bottom: 55px;
+}
+
+.testimon #bord .limara {
+  margin-left: 50px;
+}
+
+.testimon #bord .company {
+  margin-left: 30px;
+}
+
+.testimon #bord .company > h3 {
+  font-family: myriad pro regular, sans-serif;
+  font-size: 30px;
+  color: #212121;
+  text-transform: uppercase;
+}
+
+.testimon #bord .company > h3 + h4 {
+  font-family: myriad pro regular, sans-serif;
+  font-size: 12px;
+  color: #212121;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.testimon #bord .company p {
+  font-family: myriad pro regular, sans-serif;
+  font-size: 14px;
+  color: #212121;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.testimon #carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.testimon #carousel > img {
+  margin: 2px;
+}
+
+#funfact {
+  max-width: 1366px;
+  min-height: 300px;
+  background-color: #f6f6f6;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+#funfact figure {
+  margin-top: 75px;
+  text-align: center;
+}
+
+#funfact figure > figcaption {
+  margin-top: 30px;
+  font-family: myriad pro regular, sans-serif;
+  font-size: 20px;
+  color: #212121;
+  text-transform: uppercase;
+}
+
+footer {
+  max-width: 1366px;
+  min-height: 939px;
+  margin: 0 auto;
+  background-image: url("../img/footer_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 0px 153px;
+}
+
+footer .text1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  width: 1176px;
+  margin: 0 auto;
+}
+
+footer .text1 .block {
+  position: relative;
+  width: 60px;
+  height: 35px;
+  border-bottom: 4px solid #fff;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  margin-top: 298px;
+}
+
+footer .text1 .block .in_block {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: none;
+  margin-left: -50px;
+}
+
+footer .text1 .block .in_block > span {
+  font-family: myriad pro regular, sans-serif;
+  font-size: 22px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+footer .text1 .block:hover .in_block {
+  display: block;
+  width: 250px;
+}
+
+footer .text1 h2 {
+  font-family: myriad pro regular, sans-serif;
+  font-size: 46px;
+  letter-spacing: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+footer #input {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer #input input {
+  width: 360px;
+  height: 57px;
+  margin: 0px 30px 30px 0px;
+}
+
+footer #input input[placeholder] {
+  font-family: myriad pro regular, sans-serif;
+  font-size: 16px;
+  color: #212121;
+  padding-left: 10px;
+}
+
+footer #message {
+  width: 769px;
+}
+
+footer #message textarea {
+  margin-left: -18px;
+  margin-bottom: -10px;
+}
+
+footer #message textarea[placeholder] {
+  font-family: myriad pro regular, sans-serif;
+  font-size: 16px;
+  color: #212121;
+  padding-left: 10px;
+  padding-top: 26px;
+}
+
+footer #send {
+  width: 123px;
+  height: 50px;
+  background-image: url("../img/arrow.png");
+  background-repeat: no-repeat;
+  background-position: 90px 18px;
+  border: none;
+  font-family: myriad pro regular, sans-serif;
+  font-size: 16px;
+  color: #212121;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+footer #up {
+  width: 45px;
+  height: 41px;
+  background-color: #fff;
+  border: none;
+  margin-left: 990px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+footer hr {
+  width: 1170px;
+  background-color: #4d4d4d;
+  margin: 0 auto;
+  margin-top: 57px;
+}
+
+footer #footer {
+  display: flex;
+  margin-top: 25px;
+}
+
+footer #footer #social {
+  align-self: center;
+  margin-left: 98px;
+}
+
+footer #footer #social a:hover img {
+  transform: scale(1.1);
+  transition: .3s ease-out;
+}
+
+footer #footer #social img {
+  padding: 0 2px;
+}
+
+footer #footer #copyright {
+  align-self: center;
+  margin-left: 260px;
+}
+
+footer #footer #copyright span {
+  font-family: myriad pro regular, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-transform: capitalize;
+}
